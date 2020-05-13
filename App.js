@@ -5,6 +5,7 @@ import TelaPrincipal from './telas/TelaPrincipal';
 import TelaDetalhes from './telas/TelaDetalhes';
 import Medidas from './medidas/Medidas';
 import Cores from './cores/Cores';
+import ContatoCartao from './componentes/ContatoCartao';
 
 export default function App() {
   const [telaPrincipal, setTelaPrincipal] = useState (true);
@@ -57,7 +58,7 @@ export default function App() {
   let conteudo
   if(telaPrincipal)
     conteudo = 
-      <TelaPrincipal 
+      <TelaPrincipal
         adicionarContato = { adicionarContato }
         contatos = { contatos }
         removerContato = { removerContato }

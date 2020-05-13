@@ -3,6 +3,7 @@ import { View, Alert, FlatList } from 'react-native';
 
 import ContatoInput from '../componentes/ContatoInput';
 import ContatoItem from '../componentes/ContatoItem';
+import ContatoCartao from '../componentes/ContatoCartao';
 
 const TelaPrincipal = (props) => {
 
@@ -28,7 +29,7 @@ const TelaPrincipal = (props) => {
           renderItem = {
             contato => (
               // Mostra o ID (10) + nome + tel
-              <ContatoItem
+              <ContatoCartao
                 id = {contato.item.id}
                 nome = {contato.item.nome}
                 telefone = {contato.item.telefone}
